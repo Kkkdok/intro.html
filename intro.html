@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="multumesc-de-inregistrare.html">
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>
+          <label for="nume-prenume" autofocus>Nume,Prenume</label>
+        </td>
+        <td><input id="nume-prenume" maxlength="20" required pattern="[A-Za-z]{3,10} [A-Za-z]{3,10}"></td>
+      </tr>
+      <tr>
+        <td>
+        <label for="data-nasterii">Data nasterii</label>
+        </td>
+        <td><input type="date" id="data-nasterii"></td>
+      </tr>
+<tr>
+  <td>
+<label for="ocupatie">ocupatie</label>
+  </td>
+  <td>
+    <select>
+    <option>student</option>
+    <option>angajat</option>
+    <option>pensionar</option>
+  </select>
+</td>
+</tr>
+  <tr>
+    <td><label for="alege genul">alege genul</label></td>
+    <td>
+    <input type="radio" name="gen" required>M<br>
+    <input type="radio" name="gen" required>F<br>
+    <input type="radio" name="gen" required>N<br>
+  </td>
+</tr>
+<tr>
+  <td><label for="sunt de acord cu conditiile"><b>sunt de acord cu <a href="termeni.html" target="_blank">conditiile</a></b></label></td>
+
+  <td>
+    <input type="checkbox" checked>
+  </td>
+</tr>
+<tr>
+  <td colspan="2"><label for="caracterizeaza-te"><textarea name="biografia" id="" cols="45" rows="10"></textarea></label></td>
+</tr>
+<tr>
+  <td colspan="2" align="right"><button type="submit">trimite</button></td>
+</tr>
+    </table>
+  </form>
+
+</body>
+</html>
